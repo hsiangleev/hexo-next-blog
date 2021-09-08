@@ -33,6 +33,12 @@
 {%- if theme.baidu_site_verification %}
   <meta name="baidu-site-verification" content="{{ theme.baidu_site_verification }}">
 {%- endif %}
+{%- if theme.360_site_verification %}
+  <meta name="360-site-verification" content="{{ theme.360_site_verification }}">
+{%- endif %}
+{%- if theme.sougou_site_verification %}
+  <meta name="sougou-site-verification" content="{{ theme.sougou_site_verification }}">
+{%- endif %}
 
 <link rel="stylesheet" href="{{ url_for(theme.css) }}/main.css">
 

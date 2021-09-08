@@ -4,7 +4,7 @@
       src="{{ url_for(theme.avatar.url) }}">
   {%- endif %}
   <p class="site-author-name" itemprop="name">{{ author }}</p>
-  <div class="site-description" itemprop="description">{{ description }}</div>
+  <div class="site-description" itemprop="description">{{ theme.my_customize.signature }}</div>
 </div>
 
 {%- if theme.site_state %}
@@ -77,6 +77,15 @@
   <div class="cc-license site-overview-item animated" itemprop="license">
     {%- set ccImage = '<img src="' + theme.vendors.creative_commons.url + '" alt="Creative Commons">' %}
     {{ next_url(ccURL, ccImage, {class: 'cc-opacity'}) }}
+  </div>
+{%- endif %}
+
+{%- if theme.rss %}
+  <div class="feed-link motion-element animated fadeInRight">
+    <a href="{{ theme.rss }}" rel="alternate">
+      <i class="fa fa-rss"></i>
+      RSS
+    </a>
   </div>
 {%- endif %}
 

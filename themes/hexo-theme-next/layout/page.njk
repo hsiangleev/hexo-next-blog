@@ -10,6 +10,10 @@
     {{- __('title.tag') + page_title_suffix }}
   {%- elif page.type === 'schedule' and not page.title %}
     {{- __('title.schedule') + page_title_suffix }}
+    {%- elif page.type === 'about' and not page.title %}
+    {{- page.mainTitle + page_title_suffix }}
+    {%- elif page.type === 'project' and not page.title %}
+    {{- page.mainTitle + page_title_suffix }}
   {%- else %}
     {{- page.title + page_title_suffix }}
   {%- endif %}
@@ -27,7 +31,7 @@
       {#################}
       {### PAGE BODY ###}
       {#################}
-      <div class="post-body{%- if page.direction and page.direction.toLowerCase() === 'rtl' %} rtl{%- endif %}">
+      <div class="lee-nav-content post-body{%- if page.direction and page.direction.toLowerCase() === 'rtl' %} rtl{%- endif %}">
         {%- if page.type === 'tags' %}
           {%- include '_partials/page/tags.njk' -%}
         {% elif page.type === 'categories' %}
