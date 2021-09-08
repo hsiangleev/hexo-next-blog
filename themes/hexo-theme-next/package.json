@@ -1,27 +1,32 @@
 {
-  "_from": "hexo-theme-next",
+  "_args": [
+    [
+      "hexo-theme-next@8.7.1",
+      "E:\\blog"
+    ]
+  ],
+  "_development": true,
+  "_from": "hexo-theme-next@8.7.1",
   "_id": "hexo-theme-next@8.7.1",
   "_inBundle": false,
   "_integrity": "sha512-eJstBtUSyyLFJ8CpwkJ/1/XVuibaLzgVqPwZuh55kOGKubfJ6mSP/RFKex3kly5LCwCTZSSNGbuhNeJaz2Z67Q==",
   "_location": "/hexo-theme-next",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "hexo-theme-next",
+    "raw": "hexo-theme-next@8.7.1",
     "name": "hexo-theme-next",
     "escapedName": "hexo-theme-next",
-    "rawSpec": "",
+    "rawSpec": "8.7.1",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "8.7.1"
   },
   "_requiredBy": [
-    "#DEV:/",
-    "#USER"
+    "#DEV:/"
   ],
   "_resolved": "https://registry.npmjs.org/hexo-theme-next/-/hexo-theme-next-8.7.1.tgz",
-  "_shasum": "0c8a5ceda6baa7d77d5de925d36dd885db35b980",
-  "_spec": "hexo-theme-next",
+  "_spec": "8.7.1",
   "_where": "E:\\blog",
   "author": {
     "name": "NexT",
@@ -30,8 +35,6 @@
   "bugs": {
     "url": "https://github.com/next-theme/hexo-theme-next/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "Elegant and powerful theme for Hexo.",
   "devDependencies": {
     "@next-theme/eslint-config": "0.0.3",

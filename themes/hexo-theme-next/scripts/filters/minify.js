@@ -84,10 +84,6 @@ hexo.extend.filter.register('after_generate', () => {
     hexo.route.remove('js/third-party/comments/gitalk.js');
   }
 
-  if (!theme.valine.enable) {
-    hexo.route.remove('js/third-party/comments/valine.js');
-  }
-
   if (!theme.isso) {
     hexo.route.remove('js/third-party/comments/isso.js');
   }
