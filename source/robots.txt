@@ -1,0 +1,11 @@
+User-agent: *
+Crawl-delay: 10
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/ 
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Sitemap: https://hsianglee.cn/sitemap.xml
+Sitemap: https://hsianglee.cn/baidusitemap.xml
