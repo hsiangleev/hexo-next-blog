@@ -139,6 +139,18 @@ description: 通过在具有公网 IP 的节点上部署 frp 服务端，可以�
     ```
     即访问**a.hsianglee.cn**即可访问配置服务端管理界面，访问**b.hsianglee.cn**即可访问到内网共享文件
 14. 如果要添加本地的其它端口，直接修改配置文件就可以了。
+15. 配置代理服务器，服务器frps.init添加配置`vhost_http_port = 3017`，客户端frpc.init添加如下配置
+    ```ini
+    [http]
+    type = tcp
+    remote_port = 3018
+    plugin = http_proxy
+    plugin_http_user = admin
+    plugin_http_passwd = admin
+    ```
+    然后打开另一台电脑，配置代理服务器，如下图：<img data-src="/images/使用frp配置内网穿透，将内网服务暴漏公网/3.png" class="lozad" style="margin: 0 auto;"/>
+    然后浏览器访问baidu之后，便会要求输入用户名和密码，输入之后便可以了<img data-src="/images/使用frp配置内网穿透，将内网服务暴漏公网/4.png" class="lozad" style="margin: 0 auto;"/>
+
 
 **附录：**
     1. [frp文档](https://gofrp.org/docs/)
