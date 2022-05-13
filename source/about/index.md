@@ -21,7 +21,6 @@ mainTitle: 关于     # 自定义属性，解决title不生效
 邮箱: me@mail.hsianglee.cn
 所在：安徽省马鞍山市
 
-
 **自我介绍**
 
 <p style="text-indent: 2em;">但求茅屋三两处，小遮四方风雨独安然。</p>
