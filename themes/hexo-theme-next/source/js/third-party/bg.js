@@ -5,7 +5,7 @@
         "3": "http://acg.bakayun.cn/randbg.php",                                                    // 二次元
         "4": "https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302",                   // 风景（有点慢）
         "11": "https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302&device=mobile",    // 手机 
-        "21": "//cdn.hsianglee.cn/randomImage/img_pc/"+Math.ceil(Math.random()*20)+".jpg",
+        "21": "//cdn.hsianglee.cn/randomImage/img_pc/"+Math.ceil(Math.random()*92)+".jpg",
         "22": "//cdn.hsianglee.cn/randomImage/img_phone/"+Math.ceil(Math.random()*20)+".jpg",
     }
     var src=obj["21"];
