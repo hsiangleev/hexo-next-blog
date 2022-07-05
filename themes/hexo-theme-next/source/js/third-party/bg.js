@@ -5,10 +5,11 @@
         "3": "http://acg.bakayun.cn/randbg.php",                                                    // 二次元
         "4": "https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302",                   // 风景（有点慢）
         "11": "https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302&device=mobile",    // 手机 
-        "21": "//cdn.hsianglee.cn/randomImage/img_pc/"+Math.ceil(Math.random()*92)+".jpg",
+        "21": "//cdn.hsianglee.cn/randomImage/img_pc/"+Math.ceil(Math.random()*130)+".jpg",
+        "23": "//cdn.hsianglee.cn/randomImage/img_pc/"+Math.ceil(Math.random()*87)+".png",
         "22": "//cdn.hsianglee.cn/randomImage/img_phone/"+Math.ceil(Math.random()*20)+".jpg",
     }
-    var src=obj["21"];
+    var src = Math.random() > (87/(87+130)) ? obj["21"] : obj["23"]
     if(document.body.clientWidth < 768) src = obj["22"];
     
     document.querySelector('.lee-bg').innerHTML = '<img src="'+src+'" />';
